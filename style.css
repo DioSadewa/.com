@@ -1174,6 +1174,91 @@ input:focus, textarea:focus, select:focus {
     animation: twinkle 2s infinite ease-in-out;
 }
 
+/* ============================= */
+/* MOBILE RESPONSIVE FIX */
+/* ============================= */
+
+@media (max-width:768px){
+
+/* NAVBAR */
+nav ul{
+    display:none;
+}
+
+.nav-extras{
+    margin-left:auto;
+}
+
+/* HERO */
+.hero{
+    padding:120px 0 60px;
+}
+
+.hero h1{
+    font-size:2rem;
+}
+
+.hero p{
+    font-size:0.95rem;
+}
+
+/* ABOUT GRID */
+.about-grid{
+    grid-template-columns:1fr;
+}
+
+.who-am-i{
+    grid-column:span 1;
+}
+
+/* EXPERIENCE */
+.timeline-grid{
+    grid-template-columns:1fr;
+}
+
+/* PROJECTS */
+.projects-grid{
+    grid-template-columns:1fr;
+}
+
+/* SKILLS */
+.skill-item{
+    width:100%;
+}
+
+/* CONTACT */
+.contact-wrapper{
+    grid-template-columns:1fr;
+}
+
+/* COMPANY LOGO */
+.comp-logo{
+    width:180px;
+    height:auto;
+}
+
+/* HERO BUTTON */
+.hero-btns{
+    flex-direction:column;
+}
+
+/* HERO STATS */
+.hero-stats{
+    justify-content:center;
+}
+
+/* PROFILE IMAGE */
+.profile-gradient-container{
+    max-width:220px;
+}
+
+/* FOOTER TEXT */
+.footer-bottom h3{
+    font-size:1.6rem;
+}
+
+}
+
 @keyframes twinkle{
     0%,100%{opacity:0.1; transform:scale(0.7);}
     50%{opacity:1; transform:scale(1.4);}
