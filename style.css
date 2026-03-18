@@ -1250,3 +1250,16 @@ margin:auto;
 }
 
 }
+/* FIX RESPONSIVE PROJECTS (FINAL OVERRIDE) */
+@media screen and (max-width:768px){
+
+.projects-grid{
+    grid-template-columns:1fr !important;
+    grid-template-rows:auto !important;
+}
+
+.project-card{
+    width:100%;
+}
+
+}
