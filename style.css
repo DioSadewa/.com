@@ -81,12 +81,12 @@ header .container {
 }
 
 .logo span {
-    display:block;
-    font-size:0.65rem;
-    line-height:1.4;
-    margin-top:4px;
-    white-space:normal;
-    color:#fff; /* ini yang bikin jadi putih */
+    display: block;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 nav ul {
@@ -1177,52 +1177,4 @@ input:focus, textarea:focus, select:focus {
 @keyframes twinkle{
     0%,100%{opacity:0.1; transform:scale(0.7);}
     50%{opacity:1; transform:scale(1.4);}
-}
-
-/* ============================= */
-/* NAVBAR MOBILE FIX ONLY */
-/* ============================= */
-
-.menu-toggle{
-display:none;
-font-size:1.5rem;
-cursor:pointer;
-}
-
-/* MOBILE */
-@media (max-width:768px){
-
-.menu-toggle{
-display:block;
-margin-left:auto;
-}
-
-/* dropdown menu */
-nav ul{
-position:absolute;
-top:70px;
-left:0;
-width:100%;
-background:var(--bg-dark);
-flex-direction:column;
-align-items:center;
-gap:20px;
-padding:20px 0;
-
-max-height:0;
-overflow:hidden;
-transition:0.3s ease;
-}
-
-/* aktif */
-nav ul.active{
-max-height:400px;
-}
-
-/* tombol biar rapi */
-nav ul li .btn-primary{
-width:90%;
-text-align:center;
-}
-
 }
