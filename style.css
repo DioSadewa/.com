@@ -1180,20 +1180,13 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* ============================= */
-/* NAVBAR MOBILE CLEAN */
+/* NAVBAR MOBILE FIX ONLY */
 /* ============================= */
 
 .menu-toggle{
 display:none;
 font-size:1.5rem;
 cursor:pointer;
-color:var(--text-main);
-}
-
-/* tombol dalam menu */
-nav ul li .btn-primary{
-width:80%;
-justify-content:center;
 }
 
 /* MOBILE */
@@ -1226,9 +1219,10 @@ nav ul.active{
 max-height:400px;
 }
 
-/* tombol */
+/* tombol biar rapi */
 nav ul li .btn-primary{
 width:90%;
+text-align:center;
 }
 
 }
