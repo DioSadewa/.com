@@ -110,9 +110,7 @@ if(starContainer){
     }
 }
 
-/* ============================= */
-/* NAVBAR TOGGLE */
-/* ============================= */
+/* NAVBAR TOGGLE ONLY */
 
 const menuToggle = document.getElementById('menu-toggle');
 const navMenu = document.getElementById('nav-menu');
@@ -123,7 +121,7 @@ if(menuToggle && navMenu){
     });
 }
 
-/* auto close setelah klik */
+/* auto close */
 document.querySelectorAll('#nav-menu a').forEach(link=>{
     link.addEventListener('click', ()=>{
         navMenu.classList.remove('active');
