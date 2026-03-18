@@ -111,7 +111,7 @@ if(starContainer){
 }
 
 /* ============================= */
-/* NAVBAR TOGGLE MOBILE */
+/* NAVBAR TOGGLE */
 /* ============================= */
 
 const menuToggle = document.getElementById('menu-toggle');
@@ -122,3 +122,10 @@ if(menuToggle && navMenu){
         navMenu.classList.toggle('active');
     });
 }
+
+/* auto close setelah klik */
+document.querySelectorAll('#nav-menu a').forEach(link=>{
+    link.addEventListener('click', ()=>{
+        navMenu.classList.remove('active');
+    });
+});
